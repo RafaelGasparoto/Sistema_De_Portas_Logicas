@@ -25,6 +25,7 @@ janelaPrincipal* janelaPrincipal::get_instancia(){
 }
 
 void janelaPrincipal::barraMenu(){
+    this->setWindowTitle("Sistema de Portas Lógicas");
 
     bar = new QMenuBar(this);
     arquivo = new QMenu("Arquivo",this);
@@ -332,24 +333,26 @@ void janelaPrincipal::paintEvent(QPaintEvent *event){
     for(int k = 0; k < Porta::get_qtd_obj(); k++){
         for(int i = 0; i < portas[k]->get_entrada_i(); i++){
             if(portas[k]->get_sinal() == 1){
-                QPen pen(Qt::green);
+                QPen pen(Qt::green, 4);
                 QBrush br(Qt::green);
                 painter->setPen(pen);
                 painter->setBrush(br);
+               // painter->drawRect();
                 painter->drawRect(portas[k]->get_target());
              }
              if(portas[k]->get_sinal() == 3){
-                QPen pen(Qt::red);
+                QPen pen(Qt::red, 4);
                 QBrush br(Qt::red);
+
                 painter->setPen(pen);
                 painter->setBrush(br);
                 painter->drawRect(portas[k]->get_target());
              }
              if(portas[k]->get_entradas(i)->get_sinal() == 1){
-                QPen pen(Qt::green);
+                QPen pen(Qt::green, 2);
                 painter->setPen(pen);
              }else if(portas[k]->get_entradas(i)->get_sinal() == 3){
-                 QPen pen(Qt::red);
+                 QPen pen(Qt::red, 2);
                  painter->setPen(pen);
              }else{
                  painter->setBrush(Qt::transparent);

@@ -1,7 +1,8 @@
 TEMPLATE = app
 TARGET = Trabalho
 QT = core gui widgets
-
+QT += core gui
+QT += qml xml
 
 SOURCES += \
     and.cpp \
@@ -31,3 +32,8 @@ DISTFILES += \
     imagens/falso.png \
     imagens/led.png \
     imagens/verdade.png
+
+RESOURCES += \
+    images.qrc
+
+

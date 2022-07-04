@@ -1,6 +1,6 @@
 #include "led.h"
 
-LED::LED(int x, int y) : Porta(x, y){image.load("C:/Users/rafae/Documents/SistemaDePortasLogicas/imagens/led.png");}
+LED::LED(int x, int y) : Porta(x, y){image.load(":/images/imagens/led.png");}
 
 int LED::get_tipo(){return 6;}
 

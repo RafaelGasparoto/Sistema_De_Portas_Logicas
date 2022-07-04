@@ -1,6 +1,6 @@
 #include "or.h"
 
-OR::OR(int x, int y) : Porta(x, y){image.load("C:/Users/rafae/Documents/SistemaDePortasLogicas/imagens/OR.png");}
+OR::OR(int x, int y) : Porta(x, y){image.load(":/images/imagens/OR.png");}
 
 int OR::get_tipo(){return 4;}
 

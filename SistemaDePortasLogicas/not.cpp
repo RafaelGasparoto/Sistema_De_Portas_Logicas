@@ -1,6 +1,6 @@
 #include "not.h"
 
-NOT::NOT(int x, int y) : Porta(x, y){image.load("C:/Users/rafae/Documents/SistemaDePortasLogicas/imagens/NOT.png");}
+NOT::NOT(int x, int y) : Porta(x, y){image.load(":/images/imagens/NOT.png");}
 
 int NOT::get_tipo(){return 5;}
 

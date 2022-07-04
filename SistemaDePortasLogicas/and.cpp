@@ -1,6 +1,6 @@
 #include "and.h"
 
-AND::AND(int x, int y) : Porta(x, y){image.load("C:/Users/rafae/Documents/SistemaDePortasLogicas/imagens/AND.png");}
+AND::AND(int x, int y) : Porta(x, y){image.load(":/images/imagens/AND.png");}
 
 int AND::get_tipo(){return 3;}
 

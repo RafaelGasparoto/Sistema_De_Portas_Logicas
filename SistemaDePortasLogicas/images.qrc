@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>imagens/AND.png</file>
+        <file>imagens/falso.png</file>
+        <file>imagens/led.png</file>
+        <file>imagens/NOT.png</file>
+        <file>imagens/OR.png</file>
+        <file>imagens/verdade.png</file>
+    </qresource>
+</RCC>
